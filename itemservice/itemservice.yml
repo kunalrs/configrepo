@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: "jdbc:mysql://localhost:3306/itemsharingDB"
+    username: root
+    password: "{cipher}c6320a17bd0650748845ee24ce06e0b79a7407a02a607af484373b2fa50abb56"
+    dbcp2:
+      test-while-idle: true
+      validation-query: "SELECT 1"
+server:
+  port: 8082
